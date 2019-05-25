@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="alert alert-info">
+    @ViewBag.MESSAGE
+</div>
+
+@Html.ActionLink("新增", "Insert", null, new { @class = "btn btn-primary" })
+
+@Html.ActionLink("修改", "Update", null, new { @class = "btn btn-warning" })
+
+@Html.ActionLink("刪除", "Delete", null, new { @class = "btn btn-danger" })
