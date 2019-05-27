@@ -181,15 +181,23 @@
     <Compile Include="Codes\Helper.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LinqController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\SqlController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\chinook\CopyMe.SQLite1.generated.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CopyMe.SQLite.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\student.cs" />
+    <Compile Include="Models\sturec.cs" />
+    <Compile Include="Models\unit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -202,6 +210,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\chinook\CopyMe.SQLite.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CopyMe.SQLite1.generated.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="LinqToDB.Templates\Validation.ttinclude" />
@@ -265,6 +277,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Sql\Index.cshtml" />
+    <Content Include="Views\Linq\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

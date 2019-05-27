@@ -25,6 +25,21 @@ CREATE TABLE student (
     CONSTRAINT student_PK PRIMARY KEY (std_id)
 )";
                 Cmd.ExecuteNonQuery();
+
+                Cmd.CommandText = @"
+CREATE TABLE sturec (
+    std_id VARCHAR(10) not null,
+    unt_id VARCHAR(10) not null,
+    PRIMARY KEY(std_id)
+)";
+                Cmd.ExecuteNonQuery();
+                Cmd.CommandText = @"
+CREATE TABLE unit (
+    unt_id VARCHAR(10) not null,
+    unt_name NVARCHAR(410) not null,
+    PRIMARY KEY(unt_id)
+)";
+                Cmd.ExecuteNonQuery();
             }
 
         }
